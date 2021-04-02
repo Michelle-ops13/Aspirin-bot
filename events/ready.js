@@ -13,15 +13,15 @@ module.exports = async client => {
     `Design by Aᴜʀɢᴏɴ™`,
     `Pc with ᴀsᴘɪʀɪɴ`,
     `V!help for help`,
-    `Servers : ${await client.guilds.cache.size}`,
-    `Users : ${await client.users.cache.size}`
+    `Servers : ${await client.guilds.cache.size} | Users : ${await client.users
+      .cache.size}`
   ];
 
   setInterval(function() {
     let status = text[Math.floor(Math.random() * text.length)];
 
     client.user.setActivity(status, { type: "STREAMING" });
-  }, 3500);
+  }, 9000);
 
   console.log("Ready");
 };
