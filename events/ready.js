@@ -12,7 +12,9 @@ module.exports = async client => {
     `Version : V 1.2.1`,
     `Design by Aᴜʀɢᴏɴ™`,
     `Pc with ᴀsᴘɪʀɪɴ`,
-    `V!help for help`
+    `V!help for help`,
+    `Servers : ${await client.guilds.cache.size}`,
+    `Users : ${await client.users.cache.size}`
   ];
 
   setInterval(function() {
