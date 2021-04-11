@@ -20,7 +20,7 @@ module.exports = async client => {
   setInterval(function() {
     let status = text[Math.floor(Math.random() * text.length)];
 
-    client.user.setActivity(status, { type: "STREAMING" });
+    client.user.setActivity(status, { type: "STREAMING" }); //can be use "STREAMING, PLAYING, WATCHING,LISTENING
   }, 9000);
 
   console.log("Ready");
